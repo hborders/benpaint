@@ -14,6 +14,7 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		7BF265CD117FFFB100C3354A /* ColoredTouchPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF265CC117FFFB100C3354A /* ColoredTouchPath.m */; };
+		7BF7C62514805116003ADD31 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BF7C62414805116003ADD31 /* MainWindow-iPad.xib */; };
 		7BFACB2D117D647400C4137B /* MultitouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFACB2C117D647400C4137B /* MultitouchView.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		32CA4F630368D1EE00C91783 /* benpaint_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = benpaint_Prefix.pch; sourceTree = "<group>"; };
 		7BF265CB117FFFB100C3354A /* ColoredTouchPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoredTouchPath.h; sourceTree = "<group>"; };
 		7BF265CC117FFFB100C3354A /* ColoredTouchPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoredTouchPath.m; sourceTree = "<group>"; };
+		7BF7C62414805116003ADD31 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		7BFACB2B117D647400C4137B /* MultitouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultitouchView.h; sourceTree = "<group>"; };
 		7BFACB2C117D647400C4137B /* MultitouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultitouchView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* benpaint-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "benpaint-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				7BF7C62314805114003ADD31 /* iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -107,6 +110,14 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BF7C62314805114003ADD31 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				7BF7C62414805116003ADD31 /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				7BF7C62514805116003ADD31 /* MainWindow-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +201,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = benpaint_Prefix.pch;
 				INFOPLIST_FILE = "benpaint-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = benpaint;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -201,7 +215,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = benpaint_Prefix.pch;
 				INFOPLIST_FILE = "benpaint-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = benpaint;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
